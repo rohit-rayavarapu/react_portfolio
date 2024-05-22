@@ -1,4 +1,4 @@
-import logo from "./react-logo-xs.png";
+import logo from "./rohit.JPG";
 import "./App.css";
 import { useState } from "react";
 
@@ -59,6 +59,7 @@ function App() {
               href="https://www.linkedin.com/in/rohit-vara-prasad-rayavarapu-224358142/"
               target="_blank"
               rel="noopener noreferrer"
+              style={{ textDecoration: "none" }}
             >
               ROHIT VARA PRASAD RAYAVARAPU
             </a>
@@ -69,8 +70,9 @@ function App() {
               href="https://github.com/rohit-rayavarapu"
               target="_blank"
               rel="noopener noreferrer"
+              style={{ textDecoration: "none" }}
             >
-              My Git
+              My Repositories
             </a>
           </h1>
         </>
@@ -127,7 +129,12 @@ function App() {
         }}
       >
         <div
-          style={{ maxWidth: "60%", backgroundColor: "red", padding: "5px" }}
+          style={{
+            maxWidth: "60%",
+            backgroundColor: "red",
+            padding: "5px",
+            margin: "20px",
+          }}
         >
           <h3>HISTORY</h3>
           <p>
@@ -143,7 +150,12 @@ function App() {
           </p>
         </div>
         <div
-          style={{ maxWidth: "40%", backgroundColor: "teal", padding: "5px" }}
+          style={{
+            maxWidth: "40%",
+            backgroundColor: "teal",
+            padding: "5px",
+            margin: "20px",
+          }}
         >
           <h3>SKILLS</h3>
           <p>

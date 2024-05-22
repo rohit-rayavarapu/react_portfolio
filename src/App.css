@@ -1,12 +1,12 @@
 * {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   margin: 0px;
   padding: 0px;
 }
 
 body {
   font-family: sans-serif;
-  background-color: #00465e00;
+  background-color: #134ddfe3;
   color: #bdd1d4;
   margin: 2rem;
 }
@@ -20,8 +20,9 @@ header {
 }
 
 header img {
-  width: 3rem;
+  width: 10rem;
   object-fit: contain;
+  border-radius: 50px;
 }
 
 header h1 {
