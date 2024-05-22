@@ -93,7 +93,7 @@ function App() {
       </div>
 
       <div id="tabs">
-        <menu>
+        <menu style={{ margin: "10px" }}>
           <button
             className={activeContentIndex === 0 ? "active" : ""}
             onClick={() => setActiveCountIndex(0)}
@@ -132,16 +132,20 @@ function App() {
           style={{
             maxWidth: "60%",
             backgroundColor: "red",
-            padding: "5px",
+            padding: "10px",
             margin: "20px",
+            borderRadius: "20px",
           }}
         >
-          <h3>HISTORY</h3>
+          <h3 style={{ padding: "10px" }}>HISTORY</h3>
           <p>
             <ul style={{ listStyle: "none" }}>
               {history.map((i) => {
                 return (
-                  <li key={i.key} style={{ marginBottom: "10px" }}>
+                  <li
+                    key={i.key}
+                    style={{ marginBottom: "10px", padding: "10px" }}
+                  >
                     {i}
                   </li>
                 );
@@ -153,16 +157,20 @@ function App() {
           style={{
             maxWidth: "40%",
             backgroundColor: "teal",
-            padding: "5px",
+            padding: "10px",
             margin: "20px",
+            borderRadius: "20px",
           }}
         >
-          <h3>SKILLS</h3>
+          <h3 style={{ padding: "10px" }}>SKILLS</h3>
           <p>
             <ul style={{ listStyle: "none" }}>
               {skills.map((skill) => {
                 return (
-                  <li key={skill.key} style={{ marginBottom: "10px" }}>
+                  <li
+                    key={skill.key}
+                    style={{ marginBottom: "10px", padding: "10px" }}
+                  >
                     {skill}
                   </li>
                 );
