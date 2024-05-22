@@ -21,6 +21,31 @@ const content = [
   ],
 ];
 
+let history = [
+  "Created mobile applications based on React, integrating Facebook's best practices for interface design.",
+  "Designed and updated layouts to meet usability and performance requirements.",
+  "Worked with cross-functional design teams to create software solutions that improved overall functionality and performance.",
+  "Followed SDLC best practices within Agile environment to produce rapid iterations for clients.",
+  "Coded using HTML, CSS and JavaScript to develop features for both mobile and desktop platforms.",
+  "Used JavaScript to manipulate HTML pages using DOM.",
+  "Used React to make components function using Virtual DOM.",
+  "Built components on own and used component libraries as per the project requirements.",
+  "Used Node NPM (node package manager) to manage packages among the project.",
+];
+
+let skills = [
+  "Self-Motivated",
+  "Analytical and Critical Thinking",
+  "Interpersonal Communication",
+  "Good Telephone Etiquette",
+  "Solving problems with ease",
+  "Attention to Detail",
+  "Decision-making",
+  "Flexible and Adaptable",
+  "Multitasking Abilities",
+  "Teamwork",
+  "Ability to work under pressure",
+];
 function App() {
   const [activeContentIndex, setActiveCountIndex] = useState(0);
   return (
@@ -94,66 +119,42 @@ function App() {
           </ul>
         </div>
       </div>
-      <div style={{ display: "flex", justifyContent: "space-evenly" }}>
-        <div style={{ maxWidth: "60%", backgroundColor: "red" }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-around",
+          backgroundColor: "#7eaa5a",
+        }}
+      >
+        <div
+          style={{ maxWidth: "60%", backgroundColor: "red", padding: "5px" }}
+        >
           <h3>HISTORY</h3>
           <p>
-            <ul>
-              <li>
-                Created mobile applications based on React, integrating
-                Facebook's best practices for interface design.
-              </li>
-
-              <li>
-                Designed and updated layouts to meet usability and performance
-                requirements.
-              </li>
-
-              <li>
-                Worked with cross-functional design teams to create software
-                solutions that improved overall functionality and performance.
-              </li>
-              <li>
-                Followed SDLC best practices within Agile environment to produce
-                rapid iterations for clients.
-              </li>
-              <li>
-                Coded using HTML, CSS and JavaScript to develop features for
-                both mobile an
-              </li>
-              <li>
-                d desktop platforms. Collaborated with team to determine
-                application requirement specifications.
-              </li>
-              <li>Used JavaScript to manipulate HTML pages using DOM.</li>
-              <li>Used React to make components function using Virtual DOM.</li>
-              <li>
-                Built components on own and used component libraries as per the
-                project requirements.
-              </li>
-              <li>
-                Used Node NPM (node package manager) to manage packages among
-                the project.
-              </li>
+            <ul style={{ listStyle: "none" }}>
+              {history.map((i) => {
+                return (
+                  <li key={i.key} style={{ marginBottom: "10px" }}>
+                    {i}
+                  </li>
+                );
+              })}
             </ul>
           </p>
         </div>
-        <div style={{ maxWidth: "40%", backgroundColor: "teal" }}>
+        <div
+          style={{ maxWidth: "40%", backgroundColor: "teal", padding: "5px" }}
+        >
           <h3>SKILLS</h3>
           <p>
-            <ul>
-              <li>Self-Motivated</li>
-              <li>Analytical and Critical Thinking</li>
-              <li>Interpersonal Communication</li>
-              <li>Good Telephone Etiquette</li>
-              <li> Solving problems with ease</li>
-              <li>Attention to Detail</li>
-              <li>Decision-making</li>
-              <li>Flexible and Adaptable</li>
-              <li>Multitasking Abilities</li>
-              <li>Teamwork</li>
-              <li>Computer proficiency</li>
-              <li>Ability to work under pressure</li>
+            <ul style={{ listStyle: "none" }}>
+              {skills.map((skill) => {
+                return (
+                  <li key={skill.key} style={{ marginBottom: "10px" }}>
+                    {skill}
+                  </li>
+                );
+              })}
             </ul>
           </p>
         </div>
